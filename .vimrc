@@ -24,6 +24,12 @@ Plugin 'nvie/vim-flake8'
 " " Plugin 'L9'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'winmanager'
+Plugin 'a.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'nathanaelkane/vim-indent-guides'
 " Plugin 'tpope/vim-fugitive'
 " " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -76,7 +82,7 @@ function! NERDTree_IsValid()
 endfunction
            
 nmap wm :if IsWinManagerVisible() <BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>:q<CR> endif <CR><CR>
-let g:winManagerWidth=40 
+let g:winManagerWidth=30 
 let g:winManagerWindowLayout='NERDTree|TagList'
 let g:persistentBehaviour=0
 
@@ -90,8 +96,34 @@ set number
 "set columns=100
 "set lines=40
 
-set guifont=Consolas:h15
+" set guifont=Consolas:h15
 set autoindent
 set tabstop=4
 set expandtab
+set dictionary+=/root/dict.txt
+set complete+=k
 
+
+set foldmethod=syntax
+set foldlevel=100
+set foldcolumn=3
+
+set t_Co=256
+let g:airline_theme='term'
+let g:airline#extensions#tabline#enabled=1
+
+set relativenumber
+
+" let g:indent_guides_auto_colors = 0
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+let g:indent_guides_guide_size=1
+
+
+" highlight tabs and trailing spaces
+" set list
+" set listchars=tab:>-,trail:-,extends:>,precedes:<
+
+set cursorline cursorcolumn
+set colorcolumn=80
+" hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white

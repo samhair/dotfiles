@@ -32,6 +32,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'terryma/vim-multiple-cursors'
+" Plugin 'Valloric/YouCompleteMe'
 " Plugin 'tpope/vim-fugitive'
 " " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
@@ -90,6 +91,7 @@ let g:persistentBehaviour=0
 
 
 syntax enable
+syntax on
 set background=dark
 colorscheme solarized
 
@@ -131,3 +133,5 @@ set colorcolumn=80
 " hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
+
+

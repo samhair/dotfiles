@@ -25,8 +25,10 @@ Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'winmanager'
 Plugin 'a.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'Lokaltog/vim-powerline'
+Plugin 'ashwin/vim-powerline'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -113,8 +115,14 @@ set foldlevel=100
 set foldcolumn=3
 
 set t_Co=256
-let g:airline_theme='term'
-let g:airline#extensions#tabline#enabled=1
+" let g:airline_theme='term'
+" let g:airline#extensions#tabline#enabled=1
+"powerline{
+let g:Powerline_colorscheme='solarized256'
+" set guifont=PowerlineSymbols\ for\ Powerline
+let g:Powerline_symbols = 'fancy'
+set encoding=utf8
+"}
 
 set relativenumber
 

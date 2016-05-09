@@ -135,6 +135,7 @@ let g:indent_guides_guide_size=1
 " highlight tabs and trailing spaces
 " set list
 " set listchars=tab:>-,trail:-,extends:>,precedes:<
+set hlsearch
 
 set cursorline cursorcolumn
 set colorcolumn=80

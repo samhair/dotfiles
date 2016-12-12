@@ -105,6 +105,8 @@ set number
 " set guifont=Consolas:h15
 set autoindent
 set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set dictionary+=/root/dict.txt
 set complete+=k
@@ -140,6 +142,9 @@ set hlsearch
 set cursorline cursorcolumn
 set colorcolumn=80
 " hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
+set history=200
+set ignorecase
 
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 

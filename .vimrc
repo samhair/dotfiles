@@ -133,6 +133,7 @@ set relativenumber
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 let g:indent_guides_guide_size=1
 
+let g:ctrlsf_auto_close=0
 
 " highlight tabs and trailing spaces
 " set list

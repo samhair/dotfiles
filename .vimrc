@@ -34,6 +34,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-surround'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'tpope/vim-fugitive'
 " " plugin from http://vim-scripts.org/vim/scripts.html

@@ -95,8 +95,8 @@ let g:persistentBehaviour=0
 
 syntax enable
 syntax on
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 
 set ruler 
 set number
